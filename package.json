@@ -2,7 +2,11 @@
   "name": "@posts/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve-posts": "npx nx serve posts --port 4200",
+    "serve-users": "npx nx serve users --port 4201",
+    "dep-graph":"nx dep-graph"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "~19.2.0",
@@ -12,6 +16,9 @@
     "@angular/platform-browser": "~19.2.0",
     "@angular/platform-browser-dynamic": "~19.2.0",
     "@angular/router": "~19.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^18.0.0",
+    "@supabase/supabase-js": "^2.49.1",
+    "bootstrap": "^5.3.3",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
   },
